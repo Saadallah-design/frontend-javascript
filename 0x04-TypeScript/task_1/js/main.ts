@@ -17,11 +17,15 @@ interface Teacher {
 
 // creating Directors interface
 // extending on the teachers interface
-interface Directors {   
-    readonly firstName : string,
-    readonly lastName : string,
-    location : string,
-    fullTimeEmployee : boolean,
-    numberOfReports : number,
-
+interface Directors extends Teacher {   
+    numberOfReports : number;
 }
+
+// Example usage of the Directors interface
+const director1: Directors = {
+    firstName: 'John',
+    lastName: 'Doe',
+    location: 'London',
+    fullTimeEmployee: true,
+    numberOfReports: 17,
+  };
