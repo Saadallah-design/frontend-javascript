@@ -14,3 +14,14 @@ interface Teacher {
     [key: string]: any;
 
 }
+
+// creating Directors interface
+// extending on the teachers interface
+interface Directors {   
+    readonly firstName : string,
+    readonly lastName : string,
+    location : string,
+    fullTimeEmployee : boolean,
+    numberOfReports : number,
+
+}
