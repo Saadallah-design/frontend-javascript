@@ -29,3 +29,11 @@ const director1: Directors = {
     fullTimeEmployee: true,
     numberOfReports: 17,
   };
+
+  // Log the director object to the console
+console.log(director1);
+
+// Define the interface for the printTeacher function
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
