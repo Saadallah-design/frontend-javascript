@@ -37,3 +37,11 @@ console.log(director1);
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
+// Implement the function that matches the interface
+const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
+    const firstLetter = firstName.charAt(0);
+    return `${firstLetter}. ${lastName}`;
+  };
+  
+  // Example usage
+  console.log(printTeacher("John", "Doe"));
