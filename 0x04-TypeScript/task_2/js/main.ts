@@ -76,7 +76,7 @@ interface DirectorInterface {
   type Subjects = 'Math' | 'History';
   
   // The teachClass function
-  function teachClass(todayClass: Subjects): string {
+  function teachClass(todayClass:Subjects): string {
     if (todayClass === 'Math') {
       return 'Teaching Math';
     } else {
